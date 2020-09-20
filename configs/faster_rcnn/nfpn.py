@@ -3,7 +3,7 @@ _base_ = './faster_rcnn_r50_fpn_1x_coco.py'
 # model settings
 model = dict(
     neck=dict(
-            type='NFPN',
+            type='BFP4',
             in_channels=256,
             num_levels=5,
             refine_level=2,
