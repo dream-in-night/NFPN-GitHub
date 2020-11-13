@@ -5,6 +5,7 @@
 # 1 NFPN
 
 1.将本项目中mmdet/model/neck中的nfpn.py以及__init__.py文件复制到mmdetection/mmdet/neck下，替换__init__.py文件
+
 python tools/train.py config/faster_rcnn/nfpn.py
 # 2 NFPN + DROI 
 
@@ -12,7 +13,7 @@ python tools/train.py config/faster_rcnn/nfpn.py
 
 3.将本项目中mmdet/model/roi_heads中的standard_roi_head.py文件复替换mmdetection/mmdet/roi_heads中的standard_roi_head
 
-4.将本项目中mmdet/model/roi_heads/roi_extractors__文件夹__替换复替换mmdetection/mmdet/roi_heads中的/roi_extractors__文件夹__
+4.将本项目中mmdet/model/roi_heads/roi_extractors文件夹替换复替换mmdetection/mmdet/roi_heads中的/roi_extractors文件夹
 
 # 3，NFPN + DROI + RFPN
 
