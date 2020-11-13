@@ -1,10 +1,20 @@
 # NFPN-GitHub
 # 基于mmdetection，先安装mmdetection配置好环境。
 # 训练方法：
+1.将本项目中mmdet/model/neck中的nfpn.py以及__init__.py文件复制到mmdetection/mmdet/neck下，替换__init__.py文件
+
+2.将本项目中mmdet/model/detectors中的twostage.py文件替换到mmdetection/mmdet/detectors下的twostage.py
+
+3.将本项目中mmdet/model/roi_heads中的standard_roi_head.py文件复替换mmdetection/mmdet/roi_heads中的standard_roi_head
+
+4.将本项目中mmdet/model/roi_heads/roi_extractors__文件夹__替换复替换mmdetection/mmdet/roi_heads中的/roi_extractors__文件夹__
+
+5.config文件,添加的是neck部分的nfpn模块,因此需要引用config/faster_rcnn/nfpn.py
 # 1 NFPN
 python tools/train.py config/faster_rcnn/nfpn.py
 # 2 NFPN + DROI 
 # 3，NFPN + DROI + RFPN
+
 **表格 1 在Lisa数据集上的实验**
 
 |                                  | mAP      | AP50     | AP50     | AP50     | AP50     | AP50 | AP50     | backbone   |
