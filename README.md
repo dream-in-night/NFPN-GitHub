@@ -3,6 +3,7 @@
 # 训练方法：
 
 # 1 NFPN
+
 1.将本项目中mmdet/model/neck中的nfpn.py以及__init__.py文件复制到mmdetection/mmdet/neck下，替换__init__.py文件
 python tools/train.py config/faster_rcnn/nfpn.py
 # 2 NFPN + DROI 
